@@ -1,0 +1,56 @@
+import { createStitches } from "@stitches/react";
+
+export const { 
+  getCssText, 
+  styled, 
+  globalCss,
+} = createStitches({
+  theme: {
+    fonts: {
+      body: 'Roboto'
+    },
+    
+    colors: {
+      purpleLight: "#996DFF",
+      purpleMid: "#8257E5",
+      purpleDark: "#633BBC",
+      purpleLow: "#271A45",
+      blueLight: "#6A80FF",
+      blueMid: "#4863F7",
+      blueDark: "#3249CB",
+      blueLow: "#182049",
+      greenLight: "#00B37E",
+      greenMid: "#00875F",
+      greenDark: "#015F43",
+      greenLow: "#00291D",
+      redLight: "#FC4737",
+      redMid: "#D73628",
+      redDark: "#AD1E12",
+      redLow: "#42110D",
+      successLight: "#04D361",
+      successBase: "#1B873F",
+      successLow: "#051B0D",
+      dangerLight: "#F75A68",
+      dangerBase: "#CC2937",
+      dangerLow: "#2D090C",
+      warningLight: "#FBA94C",
+      warningBase: "#EB8A1D",
+      warningLow: "#2E1B06",
+      newLight: "#1EF7D0",
+      newBase: "#07847E",
+      newLow: "#163840",
+      white: "#FFFFFF",
+      black: "#000000",
+      gray100: "#E1E1E6",
+      gray200: "#C4C4CC",
+      gray300: "#8D8D99",
+      gray400: "#7C7C8A",
+      gray500: "#505059",
+      gray600: "#323238",
+      gray700: "#29292E",
+      gray800: "#202024",
+      gray900: "#121214",
+      gray950: "#09090A",
+    },
+  },
+});
