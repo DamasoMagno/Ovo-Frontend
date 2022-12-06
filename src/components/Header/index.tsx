@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Bell } from "phosphor-react";
 
 import { Avatar } from "../../components/Avatar";
 
@@ -13,13 +12,8 @@ export function Header() {
       </p>
 
       <nav>
-        <div className="notification">
-          <Bell />
-          <span>3</span>
-        </div>
-
         <Link href="#" className="profile">
-          <Avatar 
+          <Avatar
             src="https://github.com/DamasoMagno.png"
             alt="Perfil do usuario Damaso Magno"
           />

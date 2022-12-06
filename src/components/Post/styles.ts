@@ -12,6 +12,10 @@ export const Container = styled('div', {
     marginTop: '1rem'
   },
 
+  '&:last-child': {
+    marginBottom: '5rem'
+  },
+
   'header': {
     display: 'flex',
     alignItems: 'center',
@@ -56,9 +60,7 @@ export const Container = styled('div', {
     alignItems: 'center',
     justifyContent: 'space-between',
 
-    'button': {
-      background: 'transparent',
-      border: 0,
+    'a': {
       color: '$gray400',
       fontSize: '1.25rem',
 

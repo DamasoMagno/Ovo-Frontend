@@ -1,4 +1,5 @@
-import { PencilLine } from "phosphor-react";
+import Link from "next/link";
+import { ArrowRight } from "phosphor-react";
 
 import { Avatar } from "../Avatar";
 
@@ -27,7 +28,9 @@ export function Post() {
 
       <footer>
         <time>Há 2h</time>
-        <PencilLine />
+        <Link href="/post/1123123">
+          <ArrowRight />
+        </Link>
       </footer>
     </Container>
   );

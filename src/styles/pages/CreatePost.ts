@@ -1,9 +1,5 @@
 import { styled } from "../../configs/stitches.config";
 
-export const Container = styled('div', {
-  background: '$gray900',
-  height: '100vh',
-});
 
 export const Header = styled('header', {
   background: '$gray950',
@@ -15,21 +11,26 @@ export const Header = styled('header', {
   padding: '1.25rem 1rem',
 });
 
-export const PostInput = styled('textarea', {
+export const Post = styled('textarea', {
   background: 'transparent',
   resize: 'none',
   color: '$gray100',
   width: '100%',
-  height: '75vh',
+  height: '75%',
+  fontSize: '1.05rem',
   outline: 0,
   border: 0,
-  padding: '1rem'
+  padding: '1rem',
 });
 
 export const PostOptions = styled('footer', {
+  position: 'fixed',
+  background: '$gray900',
+  bottom: 0,
+  width: '100%',
   display: 'flex',
   justifyContent: 'flex-end',
-  padding: '1rem 1rem 0',
+  padding: '.85rem 1rem',
   borderTop: '1px solid $gray600',
 
   'button': {
@@ -37,7 +38,7 @@ export const PostOptions = styled('footer', {
     color: '$white',
     border: 0,
     padding: '.85rem',
-    fontSize: '1.25rem',
+    fontSize: '1.15rem',
     background: '$gray600',
     borderRadius: '4px',
     display: 'flex',

@@ -8,7 +8,7 @@ export const GlobalStyles = globalCss({
   },
 
   'body': {
-    background: '$gray950'
+    background: '$gray900'
   },
 
   'body, input, textarea, button': {

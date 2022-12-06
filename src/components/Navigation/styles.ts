@@ -1,6 +1,7 @@
 import { styled } from "../../configs/stitches.config";
 
-export const Navigation = styled('footer', {
+
+export const Container = styled('footer', {
   background: '$gray950',
   width: '100%',
   position: 'fixed',
