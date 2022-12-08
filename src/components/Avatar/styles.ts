@@ -19,5 +19,3 @@ export const ImageAvatar = styled(Avatar.Image, {
   objectFit: 'cover',
   borderRadius: '100%'
 });
-
-export const NoImageAvatar = styled(Avatar.Fallback, {});

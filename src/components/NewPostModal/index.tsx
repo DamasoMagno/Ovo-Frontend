@@ -1,6 +1,6 @@
+import { ReactNode } from "react";
 import * as Modal from "@radix-ui/react-dialog";
 import { X } from "phosphor-react";
-import { ReactNode } from "react";
 
 import { Overlay, Content, PostContent, CloseButton } from "./styles";
 

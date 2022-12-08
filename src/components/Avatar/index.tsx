@@ -1,6 +1,7 @@
+import * as RadixAvatar from "@radix-ui/react-avatar";
 import { User } from "phosphor-react";
 
-import { Container, ImageAvatar, NoImageAvatar } from "./styles";
+import { Container, ImageAvatar } from "./styles";
 
 interface AvatarProps {
   src?: string;
@@ -10,13 +11,10 @@ interface AvatarProps {
 export function Avatar({ src, alt }: AvatarProps) {
   return (
     <Container>
-      <ImageAvatar
-        src={src}
-        alt={alt}
-      />
-      <NoImageAvatar>
+      <ImageAvatar src={src} alt={alt} />
+      <RadixAvatar.Fallback>
         <User color="#FFF" size={24} />
-      </NoImageAvatar>
+      </RadixAvatar.Fallback>
     </Container>
   );
 }

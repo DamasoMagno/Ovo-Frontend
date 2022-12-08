@@ -21,6 +21,6 @@ export function Navigation() {
       <Link href="/">
         <User />
       </Link>
-      </Container>
-      );
+    </Container>
+  );
 }

@@ -8,7 +8,7 @@ export const Trigger = styled(Modal.Trigger, {
 
 export const Overlay = styled(Modal.Overlay, {
   position: 'fixed',
-  background: 'rgba(0, 0, 0,  .5)',
+  background: 'rgba(0, 0, 0,  .9)',
   inset: 0
 });
 

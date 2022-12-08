@@ -5,29 +5,40 @@ import { Avatar } from "../Avatar";
 
 import { Container } from "./styles";
 
-export function Post() {
+interface PostProps {
+  post: {
+    user: {
+      name: string;
+      userTag: string;
+      avatarUrl: string;
+    },
+    content: {
+      text: string;
+      publicated_at: string;
+    }
+  }
+}
+
+export function Post({ post }: PostProps) {
   return (
     <Container>
       <header>
         <Avatar
-          src="https://github.com/DamasoMagno.png"
+          src={post.user.avatarUrl}
           alt="Perfil do usuario Damaso Magno"
         />
         <div className="profile">
-          <strong>Damaso Magno</strong>
-          <span>Frontend Developer</span>
+          <strong>{post.user.name}</strong>
+          <span>{post.user.userTag}</span>
         </div>
       </header>
 
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        laudantium facilis molestias nesciunt dolor ab iure voluptatum
-        beatae minus, laborum impedit nobis excepturi atque possimus
-        incidunt veniam! Ex, blanditiis? Mollitia!
+        {post.content.text}
       </p>
 
       <footer>
-        <time>Há 2h</time>
+        <time>Há {post.content.publicated_at}</time>
         <Link href="/post/1123123">
           <ArrowRight />
         </Link>

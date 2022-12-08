@@ -14,7 +14,7 @@ export const Header = styled('header', {
 
 export const PostContent = styled('div', {
   padding: '0 1rem',
-  marginTop: '1rem',
+  margin: '1.5rem 0',
 
   '.ownerPost': {
     color: '$white',
@@ -61,22 +61,6 @@ export const PostContent = styled('div', {
       }
     }
   },
-
-  '.feedback': {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: '3rem',
-    color: '$white',
-    fontSize: '1rem',
-    padding: '0 0 1rem',
-
-    'div': {
-      display: 'flex',
-      alignItems: 'center',
-      gap: '.4rem'
-    }
-  }
 });
 
 export const Feedback = styled('ul', {
@@ -84,7 +68,7 @@ export const Feedback = styled('ul', {
   alignItems: 'center',
   justifyContent: 'center',
   gap: '2.5rem',
-  padding: '1rem 1rem',
+  padding: '.85rem 1rem',
   borderTop: '1px solid $gray800',
   borderBottom: '1px solid $gray800',
 
@@ -94,6 +78,11 @@ export const Feedback = styled('ul', {
     gap: '.5rem',
     fontWeight: 'bold',
     color: '$white'
+  },
+
+  'svg': {
+    width: '1.5rem',
+    height: '1.5rem',
   },
 
   'button': {
@@ -111,7 +100,7 @@ export const Feedback = styled('ul', {
 });
 
 export const Comments = styled('div', {
-  padding: '1rem 1rem',
+  padding: '1.5rem 1rem',
 
   '.comment': {
     color: '$white',
@@ -123,8 +112,7 @@ export const Comments = styled('div', {
     },
 
     '> span': {
-      width: '25%',
-      height: '25%',
+      maxWidth: '50px',
     },
 
     '.userComment': {

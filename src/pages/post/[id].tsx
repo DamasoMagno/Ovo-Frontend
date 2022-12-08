@@ -5,18 +5,21 @@ import {
   Heart,
   Link as IconLink
 } from "phosphor-react";
+import { useState } from "react";
 
 import { Avatar } from "../../components/Avatar";
 import { Navigation } from "../../components/Navigation";
 
-import { 
-  Header, 
-  PostContent, 
-  Feedback, 
-  Comments 
+import {
+  Header,
+  PostContent,
+  Feedback,
+  Comments
 } from "../../styles/pages/Post";
 
 export default function Post() {
+  const [postAsFavorited, setPostAsFavorited] = useState(false);
+
   return (
     <>
       <Header>
@@ -53,10 +56,16 @@ export default function Post() {
       </PostContent>
 
       <Feedback>
-        <li>
-          <Heart   />
-          <span>3</span>
-        </li>
+        <button onClick={() => setPostAsFavorited(!postAsFavorited)}>
+          {
+            postAsFavorited ?
+              <Heart color="red" weight="fill" /> :
+              <Heart />
+          }
+          <span>
+            {postAsFavorited ? 4 : 3}
+          </span>
+        </button>
         <li>
           <Chat />
           <span>3</span>
